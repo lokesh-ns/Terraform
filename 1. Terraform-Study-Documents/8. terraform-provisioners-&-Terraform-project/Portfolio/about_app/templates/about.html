@@ -1,0 +1,41 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block container %}
+<div class="about_container">
+  <div class="about_title">about <span>me</span></div>
+  <div class="about_content">
+    <div class="about_content_left">
+      <p>
+        Hey there! My name is <span>LOKESH N S</span> and I have completed my
+        bachelor's degree in Mechanical Engineering from "Dayananda Sagar
+        College of Engineering" in 2019, Bangalore.
+      </p>
+      <p>
+        I have 2.10 years of workexperience as an automotive engineer in KPIT
+        Technologies.
+      </p>
+      <p>
+        I have worked in development and maintainence project named as
+        "S-Tolerance dimensional variation analysis tool" in which we have
+        developed the automation tool using core technical skills such as
+        Python, MATLAB, 3DCS, Catia V5 and GD and T to perform "Tolerance
+        stackup analyis process" on optical headlamp assemblies in better,
+        faster and accurate way.
+      </p>
+      <p>
+        On exposing to automation and IT skills, made me to learn and to be
+        passionate about coding so, I made a decision and lead myself to choose
+        this "Web development" platform.
+      </p>
+      <p>
+        I have completed "Python Full Stack Developer" program for a period of 8
+        months from "Pyspiders : Python training institute", Bangalore.
+      </p>
+    </div>
+    <div class="about_content_right">
+      <img src="{%static 'images/profile.jpg'%}" alt="profilepicture" />
+    </div>
+  </div>
+</div>
+{% endblock container %}

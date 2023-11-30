@@ -1,0 +1,78 @@
+{% extends 'base.html' %} {% block container %}
+<div class="contact_container">
+  <div class="contact_title">Contact <span>me</span></div>
+  <div class="contact_content">
+    <h1 class="content_1">Have any questions?</h1>
+    <h1 class="content_2">
+      Please feel free to contact me and I will get back to you as early as
+      possible...
+    </h1>
+    <div class="contact_content_box">
+      <div class="contact_content_left">
+        <div class="contact_content_left_head">
+          <h1>Drop a line</h1>
+        </div>
+        <form class="contact-form" action="" method="POST">
+          {% csrf_token %}
+          <div class="field_section field1">
+            <div class="field1_sec1">
+              <label for="_name"></label>
+              <input
+                type="text"
+                name="your_name"
+                id="_name"
+                placeholder="Name"
+              />
+            </div>
+            <div class="field1_sec2">
+              <label for="_email"></label>
+              <input
+                type="email"
+                name="your_email"
+                id="_email"
+                placeholder="E-mail"
+              />
+            </div>
+          </div>
+          <div class="field_section field2">
+            <label for="_subject"></label>
+            <input
+              type="text"
+              name="your_subject"
+              id="_subject"
+              placeholder="Subject"
+            />
+          </div>
+          <div class="field_section field3">
+            <label for="_message"></label>
+            <textarea name="your_message" id="_message" rows="10" placeholder="Message"></textarea>
+          </div>
+          <div class="field_section_field4">
+            <input type="submit" value="Send">
+          </div>
+        </form>
+      </div>
+      <div class="contact_content_right">
+        <div class="field location">
+          <div class="field_icon">
+            <i class="fa-solid fa-location-dot fa-2x"></i>
+          </div>
+          <h4>Bangalore, Karnataka, India</h4>
+        </div>
+        <div class="field phone">
+          <div class="field_icon">
+            <i class="fa-solid fa-phone fa-2x"></i>
+          </div>
+          <h4>+91 8151062564</h4>
+        </div>
+        <div class="field email">
+          <div class="field_icon">
+            <i class="fa-solid fa-envelope fa-2x"></i>
+          </div>
+          <h4>lokeshns7476@gmail.com</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock container %}
